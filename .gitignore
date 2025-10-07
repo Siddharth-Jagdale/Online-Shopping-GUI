@@ -1,7 +1,11 @@
-# Compiled class file
+# ====================================
+# Java + Maven Project .gitignore
+# ====================================
+
+# Compiled class files
 *.class
 
-# Log file
+# Log files
 *.log
 
 # BlueJ files
@@ -10,7 +14,30 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# ==========================
+# Build and output folders
+# ==========================
+/target/
+/build/
+
+# ==========================
+# IDE specific files
+# ==========================
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# ==========================
+# Package files
+# ==========================
 *.jar
 *.war
 *.nar
@@ -19,6 +46,25 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# ==========================
+# OS-generated files
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Maven specific
+# ==========================
+.mvn/
+dependency-reduced-pom.xml
+
+# ==========================
+# Local config and secrets
+# ==========================
+src/main/resources/db.properties
+
+# ==========================
+# JVM crash logs
+# ==========================
 hs_err_pid*
 replay_pid*
